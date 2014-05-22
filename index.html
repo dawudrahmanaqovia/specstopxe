@@ -4,7 +4,7 @@
   <head>
     <meta charset='utf-8' />
     <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Specstopxe : BTEC Specification Unit&#39;s will be marked up into PXE and linked to PXE Core CSS" />
+    <meta name="description" content="Specstopxe : BTEC Specification Unit&#39;s marked up into PXE Master and Output profiles" />
 
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
@@ -19,7 +19,7 @@
           <a id="forkme_banner" href="https://github.com/dawudrahmanaqovia/specstopxe">View on GitHub</a>
 
           <h1 id="project_title">Specstopxe</h1>
-          <h2 id="project_tagline">BTEC Specification Unit&#39;s will be marked up into PXE and linked to PXE Core CSS</h2>
+          <h2 id="project_tagline">BTEC Specification Unit&#39;s marked up into PXE Master and Output profiles</h2>
 
             <section id="downloads">
               <a class="zip_download_link" href="https://github.com/dawudrahmanaqovia/specstopxe/zipball/master">Download this project as a .zip file</a>
@@ -33,10 +33,46 @@
       <section id="main_content" class="inner">
         <p><img src="http://dawudrahmanaqovia.github.io/specstopxe/logo.png" alt="Pearson"></p>
 
-<h3>
-<a name="welcome-to-btec-specification-pages" class="anchor" href="#welcome-to-btec-specification-pages"><span class="octicon octicon-link"></span></a>Welcome to BTEC Specification Pages.</h3>
+<h2>
+<a name="welcome-to-btec-specification-pages" class="anchor" href="#welcome-to-btec-specification-pages"><span class="octicon octicon-link"></span></a>Welcome to BTEC Specification Pages.</h2>
 
-<p>Here are documents marked up using PXE.</p>
+<p>Listed here are BTEC Qualification specification pages supplied in Word document format and these have been converted into the equivalent PXE XHTML markup. From marking up a few samples it is clear a pattern can be seen which will form the basis of the content structure. A blank Btec Specification template can be downloaded from [here] whereby authors can use as their content plan to author new BTEC specification documents.</p>
+
+<h3>
+<a name="format-of-document-sections-for-content-and-learning-objectives" class="anchor" href="#format-of-document-sections-for-content-and-learning-objectives"><span class="octicon octicon-link"></span></a>Format of document sections for Content and Learning Objectives:</h3>
+
+<ul>
+<li>Unit introduction</li>
+<li>Learning aims
+
+<ul>
+<li>Learning aims and unit content</li>
+</ul>
+</li>
+<li>Assessment criteria</li>
+<li>Teacher guidance
+
+<ul>
+<li>Resources</li>
+<li>Assessment guidance</li>
+</ul>
+</li>
+<li>Suggested assignment outlines</li>
+</ul><h3>
+<a name="the-process-used-to-markup-the-specs-into-pxe-is-a-manual-one-comprising-of-these-step" class="anchor" href="#the-process-used-to-markup-the-specs-into-pxe-is-a-manual-one-comprising-of-these-step"><span class="octicon octicon-link"></span></a>The process used to markup the specs into PXE is a manual one comprising of these step:</h3>
+
+<ol>
+<li>Create a new PXE document using the [BTEC Spec PXE Master template].</li>
+<li>Update / add meta data and taxonomy tags into meta data. TODO: generate URI of taxonomy tag from EVN.</li>
+<li>From sample Word doc, copy the content into the relevant sections under the section headings of HTML5 in the template.</li>
+<li>Apply PXE semantic classes to headings, sections, tables. Re-use from PXE Core in the first instance.</li>
+<li>Generate bespoke PXE classes if required. Override or add new styles which are not available in PXE Core.</li>
+<li>Generate OPF manifest file to link page items together.</li>
+<li>Assemble into Epub3 bundling XHTML, CSS, Fonts, Images, Audio, Video and Javascript dependencies.</li>
+<li>Validate Epub3 with EpubCheck validator tools. Fix errors and repeat from step 5 until Epub passes.</li>
+<li>We have a digital output!</li>
+</ol><hr><h2>
+<a name="content-marked-up-to-pxe-master-format" class="anchor" href="#content-marked-up-to-pxe-master-format"><span class="octicon octicon-link"></span></a>Content marked up to PXE Master format</h2>
 
 <h3>
 <a name="front-matter" class="anchor" href="#front-matter"><span class="octicon octicon-link"></span></a>Front Matter</h3>
@@ -47,11 +83,27 @@
 <a name="btec-specification-units" class="anchor" href="#btec-specification-units"><span class="octicon octicon-link"></span></a>BTEC Specification Units</h3>
 
 <ul>
-<li><a href="http://dawudrahmanaqovia.github.io/specstopxe/Unit%2018%20Computational%20Thinking_pxe.html">Unit 18 Computational Thinking</a></li>
+<li>Unit 18 Computational Thinking 
+<a href="http://dawudrahmanaqovia.github.io/specstopxe/Unit%2018.doc">MS Word (source)</a> 
+<a href="http://dawudrahmanaqovia.github.io/specstopxe/Unit%2018%20Computational%20Thinking_pxe.html">PXE Master</a>
+</li>
 </ul><h3>
 <a name="back-matter" class="anchor" href="#back-matter"><span class="octicon octicon-link"></span></a>Back Matter</h3>
 
 <p>These will be added here.</p>
+
+<hr><h2>
+<a name="output-profiles" class="anchor" href="#output-profiles"><span class="octicon octicon-link"></span></a>Output Profiles</h2>
+
+<p>PXE Master is able to transforming to multiple output profiles. For purpose of Spec's this will initially be a print output (PDF) otherwise a transformation to IQS/PQS maybe a requirement for spec's document to be ingested into Edexcel for accreditation and assembly for custom courses for MyBTEC product.</p>
+
+<ul>
+<li>Unit 18 Computational Thinking: 
+<a href="http://dawudrahmanaqovia.github.io/specstopxe/H_504_5533.pdf">PDF</a>
+<a href="http://dawudrahmanaqovia.github.io/specstopxe/H_504_5533.xml">IQS XML</a>
+<a href="http://dawudrahmanaqovia.github.io/specstopxe/H_504_5533.html">IQS HTML</a>
+</li>
+</ul>
       </section>
     </div>
 
